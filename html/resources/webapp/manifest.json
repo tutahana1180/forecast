@@ -98,7 +98,22 @@
 				"type": "sap.ui.model.json.JSONModel",
 				"preload": true,
 				"uri": "model/algorithms/apl/forecast.json"
-				}				
+				},
+			"pal_auto_arima": {
+				"type": "sap.ui.model.json.JSONModel",
+				"preload": true,
+				"uri": "model/algorithms/pal/auto_arima.json"
+				},
+			"pal_auto_smooting": {
+				"type": "sap.ui.model.json.JSONModel",
+				"preload": true,
+				"uri": "model/algorithms/pal/auto_smooting.json"
+				},
+			"pal_seasonality_test": {
+				"type": "sap.ui.model.json.JSONModel",
+				"preload": true,
+				"uri": "model/algorithms/pal/seasonality_test.json"
+				}
 		},
 		"resources": {
 			"css": [{
@@ -123,6 +138,21 @@
 				"name": "forecast",
 				"pattern": "forecast",
 				"target": "forecast"
+				},
+				{
+				"name": "auto_arima",
+				"pattern": "auto_arima",
+				"target": "auto_arima"
+				},
+				{
+				"name": "auto_smooting",
+				"pattern": "auto_smooting",
+				"target": "auto_smooting"
+				},
+				{
+				"name": "seasonality_test",
+				"pattern": "seasonality_test",
+				"target": "seasonality_test"
 				}],
 			"targets": {
 				"demo": {
@@ -134,6 +164,18 @@
 					"clearAggregation": true,
 					"viewName": "algorithms.apl.forecast"
 					}	
+				},
+				"auto_arima": {
+					"clearAggregation": true,
+					"viewName": "algorithms.pal.auto_arima"
+				},
+				"auto_smooting": {
+					"clearAggregation": true,
+					"viewName": "algorithms.pal.auto_smooting"
+				},
+				"seasonality_test": {
+					"clearAggregation": true,
+					"viewName": "algorithms.pal.seasonality_test"
 				}
 			}	
 		
